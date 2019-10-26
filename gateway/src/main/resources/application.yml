@@ -1,0 +1,10 @@
+server:
+  port: 8080
+zuul:
+  routes:
+    p1:
+      path: /p1/**
+      url: http://localhost:8081/
+    p2:
+      path: /p2/**
+      url: http://localhost:8082/
